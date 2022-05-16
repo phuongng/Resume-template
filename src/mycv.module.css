@@ -1,0 +1,282 @@
+.myCVContainer {
+  padding: 2rem auto;
+  margin: 2rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.leftSection {
+  background-color: #fafafa;
+  box-shadow: 5px 0px 15px 0px #bdbdbd;
+  z-index: 5;
+  width: 35%;
+  position: absolute;
+  left: 0;
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #212121;
+}
+
+.rightSection {
+  flex: 1 0 0;
+  background-color: white;
+  padding: 1.5rem 1.2rem 2rem 0rem;
+  width: 60%;
+  position: absolute;
+  right: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #212121;
+}
+
+/* ------profile and bio section---------------------------------------------- */
+
+.profile {
+  position: absolute;
+  background-color: #9e9e9e;
+  padding: 2rem 1rem 0.5rem;
+  text-align: center;
+  user-select: none;
+}
+
+.profile::after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 100%;
+  height: 35px;
+  background-color: #9e9e9e;
+  transform: skewY(-4deg);
+}
+
+.photo img {
+  width: 50%;
+  border-radius: 50%;
+  box-shadow: 1px 1px 1px 2.5px rgba(0, 0, 0, 0.2);
+  filter: drop-shadow(10px 15px 25px white);
+}
+
+.bio .name {
+  font-size: 1.3rem;
+  font-weight: 800;
+  letter-spacing: 0.15rem;
+  text-align: center;
+  margin: 1.7rem 0 1.4rem;
+}
+/* .bio .profession {
+  font-size: 1rem;
+  color: #424242;
+} */
+
+.dashLine {
+  width: 50%;
+  text-align: center;
+  border: none;
+  border-top: 2px dashed #9e9e9e;
+  margin: 17rem auto 1.2rem;
+}
+
+.smallDashLine {
+  width: 30%;
+  text-align: center;
+  border: none;
+  border-top: 2px dashed #9e9e9e;
+  margin: 1.2rem auto;
+}
+/* --------------------------------------------------------------------------------------- */
+
+/* introduction section -------------------- */
+.introSection {
+  padding: 0 2rem;
+
+  align-items: center;
+  /* color: #616161; */
+}
+
+.introSection .title {
+  margin-bottom: 0;
+  margin-left: 0.5rem;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.about .paragraph {
+  margin-top: 0.6rem;
+  margin-bottom: -5px;
+  font-size: 12px;
+  line-height: 1.2rem;
+  /* letter-spacing: 0.5px; */
+}
+
+/* info section -------------------- */
+.infoSection {
+  margin: 0.6rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.infoSectionIcon {
+  width: 12px;
+  height: 12px;
+}
+/* create animation when hovering the link */
+
+.link a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.infoSection span {
+  position: relative;
+  margin-left: 0.5rem;
+  font-size: 12px;
+}
+
+.infoSection .address {
+  margin-left: 1.5rem;
+}
+/* Detail section overall setting*/
+
+.detailSection:not(:last-of-type) {
+  padding-bottom: 1.5rem;
+}
+
+.detailSection:not(:first-of-type) {
+  padding-bottom: 0;
+}
+
+.detailSection .detailTitle {
+  display: flex;
+  align-items: center;
+}
+
+.titleIconLeft {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+/* .detailSection .detailContent {
+  padding: 0 0.1rem;
+
+} */
+
+.detailSection.edu > .detailContent {
+  padding: 0.3rem 0 0.3rem 0.5rem;
+}
+
+/* TITLE-ICON AND ICON in detail section */
+.detailSection .titleIcon + span {
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.detailSection .titleIcon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0.7rem;
+
+  width: 2rem;
+  height: 2rem;
+  background-color: #9e9e9e;
+  border-radius: 50%;
+}
+
+.detailSection .icon {
+  color: #fff;
+  font-size: 15px;
+  text-align: center;
+}
+
+/* time line block in education section */
+.detailContent .timelineBlock {
+  position: relative;
+  padding-left: 35px;
+  margin-top: 1rem;
+}
+.detailContent .timelineBlock:last-of-type {
+  margin-top: 0.5rem;
+}
+
+.detailContent {
+  margin: -10px 0;
+}
+.detailContent .timelineBlock h1 {
+  font-size: 12px;
+  font-weight: 600;
+}
+.detailContent .timelineBlock p {
+  padding: 0;
+  font-size: 12px;
+  margin: 0.5px 0;
+}
+.detailContent .timelineBlock time {
+  font-size: 10px;
+  color: #424242;
+}
+.detailContent .timelineBlock::before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border: 3px solid #bdbdbd;
+  border-radius: 50%;
+  left: 1px;
+  top: -1px;
+}
+
+.detailContent .timelineBlock::after {
+  position: absolute;
+  content: "";
+  width: 1.5px;
+  height: 85%;
+  background-color: #9e9e9e;
+  left: 8px;
+  top: 16px;
+}
+
+/*----------- skills section---------- */
+
+.favorList {
+  padding: 0 0 0 1.7rem;
+
+  /* list-style: none; */
+}
+
+h1 {
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 0;
+}
+
+.favorList > li {
+  /* display: flex; */
+  /* align-items: center; */
+  /* color: #212121; */
+
+  padding: 0.3rem 0 0.3rem 1rem;
+  font-size: 12px;
+}
+
+.titleWebsite {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.websiteName {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-style: italic;
+}
+
+p {
+  margin: 0;
+  line-height: 1.2rem;
+}
